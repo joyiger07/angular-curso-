@@ -4,9 +4,11 @@ import { CardsComponent } from './components/cards/cards.component';
 
 
 
+
 @NgModule({
   declarations: [
-    CardsComponent
+    CardsComponent,
+    
   ],
   imports: [
     CommonModule

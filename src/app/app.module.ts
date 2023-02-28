@@ -7,12 +7,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
+import { IngresarComponent } from './ingresar/ingresar.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { SeriesComponent } from './series/series.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    IngresarComponent,
+    InicioComponent,
+    PeliculasComponent,
+    SeriesComponent,
+   
   ],
   imports: [
     BrowserModule,
