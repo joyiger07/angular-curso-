@@ -6,12 +6,17 @@ import { HeaderComponent } from './layout/header/header.component';
 import { LayoutModule } from './layout/layout.module';
 import { CardsComponent } from './shared/components/cards/cards.component';
 import { SharedModule } from './shared/shared.module';
+import { InicioComponent } from './inicio/inicio.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { SeriesComponent } from './series/series.component';
+
+
 
 const routes: Routes = [
-  {path:"inicio", component: HeaderComponent},
-  {path:"peliculas", component: CardsComponent},
-  {path:"series", component: LayoutModule},
-  {path:"ingresar", component: FooterComponent},
+  {path:"inicio", component: InicioComponent},
+  {path:"peliculas", component: PeliculasComponent},
+  {path:"series", component: SeriesComponent},
+  {path:"ingresar", component:CardsComponent},
 
 ];
 
