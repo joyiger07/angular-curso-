@@ -93,11 +93,24 @@ export class InicioComponent {
    
 
   ]
-  // auxiliarmovies_series: movieSerie[]= this.movies_series
+ 
 
 selected: string = 'Todos';
+paraBuscar: string = "";
 
-// parabuscar: string = "";
+
+ cambiarCategoria(value: string) {
+    console.log('viejo valor del selected', this.selected);
+   this.selected = value;
+   console.log('nuevo valor del selected', this.selected);
+  }
+  
+buscar(value: string) {
+  console.log(this.paraBuscar);
+}
+}
+ // auxiliarmovies_series: movieSerie[]= this.movies_series
+ 
 // change(value: string){
 //   console.log("viejo valor del selected", this.selected);
 //   this.selected = value;
@@ -108,10 +121,3 @@ selected: string = 'Todos';
 //   this.auxiliarmovies_series = []
 //   for(let movie of this.movies_series) {}
 // }
- cambiarCategoria(value: string) {
-    console.log("viejo valor del selected", this.selected);
-   this.selected = value;
-   console.log("nuevo valor del selected", this.selected);
-  }
-
-}
