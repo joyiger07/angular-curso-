@@ -34,3 +34,7 @@ button{
     margin: 1%;
     background-color: #32a0b3;
 }
+ form.input{
+    background-color: aqua;
+    border-radius: 3%;
+}
