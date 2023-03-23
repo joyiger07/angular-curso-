@@ -7,33 +7,39 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
-import { IngresarComponent } from './ingresar/ingresar.component';
-import { InicioComponent } from './inicio/inicio.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SeriesComponent } from './series/series.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { InicioComponent } from './inicio/inicio.component';
+import { CommonModule } from '@angular/common';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    IngresarComponent,
-    InicioComponent,
-    PeliculasComponent,
-    SeriesComponent,
-   
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    SharedModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+
+
+  @NgModule({
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        InicioComponent,     
+        SeriesComponent,
+       
+    ],
+    imports: [
+      BrowserModule,
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      SharedModule,
+      FormsModule,
+      HttpClientModule,
+      CommonModule,
+     
+    
+      
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+  })
+  export class AppModule { 
+  
+  }

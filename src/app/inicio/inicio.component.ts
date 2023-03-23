@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+// import { Data } from '@angular/router';
 import { MoviesService } from '../servicios/movies.service';
 import { Trending } from '../shared/components/Trending.interface';
+// import { SharedModule } from '../shared/shared.module';
 
-
-
-interface movieSerie {
+interface movieserie {
   id: number | string;
   name: string;
   description: string;
@@ -18,22 +18,21 @@ interface movieSerie {
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
   providers: [MoviesService]
-
-
+ 
 
 })
 export class InicioComponent {
-  movies_series: any 
-
+  movies_series : any 
   selected: string = 'Todos';
   paraBuscar: string = '';
 
   constructor(
-    private _moviesService: MoviesService
+    private _moviesService: MoviesService,
+    
   ) {
     
   }
-    
+ 
    ngOnInit() : void {
 this.getTrendingAll();
 }
@@ -41,9 +40,9 @@ this.getTrendingAll();
 getTrendingAll() {
   this._moviesService.getTrending().subscribe({
     next: (data) => {
-      this.movies_series = data;
+       this.movies_series = data;
       for (const element of this.movies_series.results) {
-        element.poster_path = 'https://www.themoviedb.org/t/p/w220_and_h330_face/' + element.poster_path;
+         element.poster_path = 'https://www.themoviedb.org/t/p/w220_and_h330_face/' + element.poster_path;
       }
     },
     error: (error) => {
@@ -96,15 +95,3 @@ getMovies() {
     console.log(value);
   }
 }
-// auxiliarmovies_series: movieSerie[]= this.movies_series
-
-// change(value: string){
-//   console.log("viejo valor del selected", this.selected);
-//   this.selected = value;
-//   console.log("nuevo valor del selected", this.selected);
-// }
-// buscar(value: string) {
-//   console.log(value);
-//   this.auxiliarmovies_series = []
-//   for(let movie of this.movies_series) {}
-// }

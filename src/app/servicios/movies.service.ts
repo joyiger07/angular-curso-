@@ -20,27 +20,29 @@ export class MoviesService {
   ) { }
 
   getTrending(): Observable<Trending> {
-    return this._http.get<Trending>(this.base_url + '/trending/all/week', {
-      params: {
-        api_key: this.api_key,
-        language:'es-ES'
-      },
+      return this._http.get<Trending>(this.base_url + '/trending/all/week', {
+          params: {
+          api_key: this.api_key,
+          language:'es-ES'
+  },
 
     })
   }
-getMovies(): Observable<any> {
-    return this._http.get(this.base_url + '/movie/popular', {
-      params: {
-        api_key: this.api_key
-      },
+  getMovies(): Observable<any> {
+      return this._http.get(this.base_url + '/movie/popular', {
+          params: {
+          api_key: this.api_key,
+          language:'es-ES'
+  },
 
     })
   }
-  getSeries(): Observable<any> {
-    return this._http.get(this.base_url + '/tv/popular', {
-      params: {
-        api_key: this.api_key
-      },
+    getSeries(): Observable<any> {
+      return this._http.get(this.base_url + '/tv/popular', {
+          params: {
+          api_key: this.api_key,
+          language:'es-ES'
+        },
 
     })
   }

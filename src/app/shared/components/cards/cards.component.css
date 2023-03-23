@@ -1,26 +1,26 @@
-.container-fluid {
+/* .container-fluid {
     background: #210a3a;  
     background: -webkit-linear-gradient(to right, #2F0743, #23192e); 
     background: linear-gradient(to right, #2F0743, #261538); 
 
-}
+} */
 
-.cards{
+/* .cards{
     margin: 5%;
     padding: 3%;
-   background-color: #ccc0da;
+   background-color: #b11c12;
    border-radius: 3%;
    box-sizing: border-box;
-}
+} */
 
-div.card{
+/* div.card{
 margin: 7;
 padding: 10%;
 background: #18062c;
 border-radius: 3%;
-border-bottom: 3px;
+border-bottom: 3px; */
 
-}
+/* } */
 .button-Noselected {
     background-color: 
     rgb(58, 196, 201);
