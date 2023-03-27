@@ -1,7 +1,7 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-         apiKey: "AIzaSyCvd-UZjPTR7Bw0oaq8p1uv-4uIPT1qPIU",
+        apiKey: "AIzaSyCvd-UZjPTR7Bw0oaq8p1uv-4uIPT1qPIU",
         authDomain: "pelisup-428d3.firebaseapp.com",
         projectId: "pelisup-428d3",
         storageBucket: "pelisup-428d3.appspot.com",

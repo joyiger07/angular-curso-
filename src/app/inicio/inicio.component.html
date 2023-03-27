@@ -14,7 +14,7 @@
                 [ngModelOptions]="{ standalone: true }"
               />
             </form>  <h1>{{paraBuscar}}</h1>
-          
+
             <button
             type="button"
             class="btn btn-lg botonTab text-white"
@@ -44,21 +44,21 @@
             "
           >
             series
-          </button>        
+          </button>
           <p>Todos (120)</p>
         </div>
       </div>
     </section>
 
-    <section class="cards row m-4">
-      <div class="container-cards md">
+    <section class="container-cards ">
+      <div class="cards md row m-4">
         <div class="row">
           <div class="col-3" *ngFor="let movie of movies_series.results">
             <div
               class="card"
               style="width: 18rem"
               *ngIf="selected == movie.media_type || selected == 'Todos'"
-            >           
+            >
               <app-cards [imagen]="movie.poster_path" [nombre]="movie.title || movie.original_name"> </app-cards>
             </div>
 
@@ -66,7 +66,7 @@
               class="card"
               style="width: 18rem"
               *ngIf="selected == 'movie'"
-            >           
+            >
               <app-cards [imagen]="movie.poster_path" [nombre]="movie.title || movie.original_name"> </app-cards>
             </div>
 
@@ -74,12 +74,12 @@
               class="card"
               style="width: 18rem"
               *ngIf="selected ==  'tv'"
-            >           
+            >
               <app-cards [imagen]="movie.poster_path" [nombre]="movie.title || movie.original_name"> </app-cards>
             </div>
           </div>
         </div>
       </div>
-   
+
     </section>
-  
+

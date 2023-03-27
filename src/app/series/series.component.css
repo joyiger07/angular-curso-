@@ -1,20 +1,24 @@
 
-.container-card {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 4%;
-    background: #210a3a;  
-    background: -webkit-linear-gradient(to right, #2F0743, #23192e); 
-    background: linear-gradient(to right, #2F0743, #261538);         
-       
-    }
+.container-cards-series {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 4%;
+  background: #210a3a;
+  background: -webkit-linear-gradient(to right, #2F0743, #23192e);
+  background: linear-gradient(to right, #2F0743, #261538);
+  background-color:#1a0431;
+}
 
 div.card{
-    display: flex;
-    margin: 10;
-    padding: 4%;
-    background-color:#1a0431;
-    border-radius: 5%;
-    justify-content: center;
-    }
+background-color:#1a0431;
+padding: 5%;
+
+
+  }
+
+div.row{
+
+   background: #210a3a;
+
+}

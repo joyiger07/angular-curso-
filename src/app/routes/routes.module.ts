@@ -9,12 +9,14 @@ import { PeliculasComponent } from '../peliculas/peliculas.component';
 import { IngresarComponent } from '../ingresar/ingresar.component';
 
 
+
 @NgModule({
   declarations: [
     PeliculasComponent,
     IngresarComponent,
     InicioComponent,
-     SeriesComponent,
+    SeriesComponent,
+
   ],
   imports: [
     CommonModule,
@@ -22,13 +24,17 @@ import { IngresarComponent } from '../ingresar/ingresar.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
- 
-    
+
+
+
+
+
+
   ],
    exports: [
-        
+
      IngresarComponent,
-    
+
   ]
 })
 export class RoutesModule { }
